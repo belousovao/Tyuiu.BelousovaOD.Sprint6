@@ -5,8 +5,14 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib
     {
         public int len;
 
+        public DataService(int len)
+        {
+            this.len = len;
+        }
+
         public string CollectTextFromFile(string str, string path)
         {
+
             string strResult;
             using (StreamReader reader = new StreamReader(path))
             {
