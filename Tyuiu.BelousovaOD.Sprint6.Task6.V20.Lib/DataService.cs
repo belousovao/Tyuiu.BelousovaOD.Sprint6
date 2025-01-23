@@ -5,8 +5,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib
     {
         public string CollectTextFromFile(string str, string path)
         {
-
-            string resStr = "";
+            var resStr = "";
 
             using (StreamReader sr = new StreamReader(path))
             {
