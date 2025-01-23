@@ -21,7 +21,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
         }
 
         string openFilePath;
-        DataService ds = new DataService();
+        private DataService ds = new();
 
         private void FormMain_Load(object sender, EventArgs e)
         {

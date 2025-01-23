@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿
 using Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib;
 namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Test
 {
