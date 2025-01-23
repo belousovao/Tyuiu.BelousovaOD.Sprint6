@@ -1,3 +1,4 @@
+using Tyuiu.BelousovaOD.Sprint6.Task2.V10.Lib;
 namespace Tyuiu.BelousovaOD.Sprint6.Task2.V10
 {
     internal static class Program
