@@ -33,117 +33,122 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task3.V27
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            label2 = new Label();
-            dataGridView1 = new DataGridView();
-            groupBox2 = new GroupBox();
-            textBoxResult = new TextBox();
-            label1 = new Label();
-            button1 = new Button();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            groupBox2.SuspendLayout();
-            SuspendLayout();
+            groupBoxMain = new GroupBox();
+            textBoxMatrix = new TextBox();
+            textBoxInfo = new TextBox();
+            groupBoxInOutPut = new GroupBox();
+            dataGridViewIO = new DataGridView();
+            buttonInfo = new Button();
+            buttonDone = new Button();
+            groupBoxMain.SuspendLayout();
+            groupBoxInOutPut.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIO).BeginInit();
+            groupBoxInOutPut.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxMain
             // 
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(53, 25);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(618, 381);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Условие";
-            groupBox1.Enter += groupBox1_Enter;
+            groupBoxMain.Controls.Add(textBoxMatrix);
+            groupBoxMain.Controls.Add(textBoxInfo);
+            groupBoxMain.Location = new Point(12, 12);
+            groupBoxMain.Name = "groupBoxMain";
+            groupBoxMain.Size = new Size(410, 357);
+            groupBoxMain.TabIndex = 0;
+            groupBoxMain.TabStop = false;
+            groupBoxMain.Text = "Условие";
             // 
-            // label2
+            // textBoxMatrix
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(18, 46);
-            label2.Name = "label2";
-            label2.Size = new Size(153, 260);
-            label2.TabIndex = 3;
-            label2.Text = "Дана матрица 5 на 5\r\n\r\n9  13 -14  23   1\r\n\r\n  15 -17  21  25  23\r\n\r\n  -4  29 -20 -10  14\r\n\r\n  27  33  12  33 -12\r\n\r\n  18  -9  -5   6   3\r\n\r\nсделать чё-то";
+            textBoxMatrix.BorderStyle = BorderStyle.None;
+            textBoxMatrix.Location = new Point(6, 87);
+            textBoxMatrix.Multiline = true;
+            textBoxMatrix.Name = "textBoxMatrix";
+            textBoxMatrix.ReadOnly = true;
+            textBoxMatrix.Size = new Size(398, 132);
+            textBoxMatrix.TabIndex = 1;
+            textBoxMatrix.TabStop = false;
             // 
-            // dataGridView1
+            // textBoxInfo
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(337, 46);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(263, 296);
-            dataGridView1.TabIndex = 2;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            textBoxInfo.BackColor = SystemColors.Control;
+            textBoxInfo.BorderStyle = BorderStyle.None;
+            textBoxInfo.Font = new Font("Segoe UI", 10F);
+            textBoxInfo.Location = new Point(6, 22);
+            textBoxInfo.Multiline = true;
+            textBoxInfo.Name = "textBoxInfo";
+            textBoxInfo.ReadOnly = true;
+            textBoxInfo.Size = new Size(398, 59);
+            textBoxInfo.TabIndex = 0;
+            textBoxInfo.TabStop = false;
+            textBoxInfo.Text = "Дан массив 5 на 5 элементов. Выполнить сортировку по возрастанию в четвертом столбце.\r\nРезультат вывести в DataGridView.\r\n\r\n";
             // 
-            // groupBox2
+            // groupBoxInOutPut
             // 
-            groupBox2.Controls.Add(textBoxResult);
-            groupBox2.Controls.Add(label1);
-            groupBox2.Location = new Point(733, 25);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(250, 125);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Вывод данных";
-            groupBox2.Enter += groupBox2_Enter;
+            groupBoxInOutPut.Controls.Add(dataGridViewIO);
+            groupBoxInOutPut.Location = new Point(428, 12);
+            groupBoxInOutPut.Name = "groupBoxInOutPut";
+            groupBoxInOutPut.Size = new Size(410, 426);
+            groupBoxInOutPut.TabIndex = 1;
+            groupBoxInOutPut.TabStop = false;
+            groupBoxInOutPut.Text = "Ввод и вывод данных:";
             // 
-            // textBoxResult
+            // dataGridViewIO
             // 
-            textBoxResult.Location = new Point(18, 46);
-            textBoxResult.Multiline = true;
-            textBoxResult.Name = "textBoxResult";
-            textBoxResult.Size = new Size(208, 73);
-            textBoxResult.TabIndex = 1;
-            textBoxResult.TextChanged += textBoxResult_TextChanged;
+            dataGridViewIO.AllowUserToAddRows = false;
+            dataGridViewIO.AllowUserToDeleteRows = false;
+            dataGridViewIO.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewIO.Location = new Point(6, 22);
+            dataGridViewIO.Name = "dataGridViewIO";
+            dataGridViewIO.Size = new Size(398, 398);
+            dataGridViewIO.TabIndex = 0;
             // 
-            // label1
+            // buttonInfo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(18, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(75, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Результат";
-            label1.Click += label1_Click;
+            buttonInfo.Location = new Point(12, 375);
+            buttonInfo.Name = "buttonInfo";
+            buttonInfo.Size = new Size(105, 63);
+            buttonInfo.TabIndex = 2;
+            buttonInfo.Text = "Что тут происходит?";
+            buttonInfo.UseVisualStyleBackColor = true;
+            buttonInfo.Click += buttonInfo_Click;
             // 
-            // button1
+            // buttonDone
             // 
-            button1.Location = new Point(751, 183);
-            button1.Name = "button1";
-            button1.Size = new Size(224, 223);
-            button1.TabIndex = 2;
-            button1.Text = "Кнопка";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            buttonDone.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 204);
+            buttonDone.Location = new Point(123, 375);
+            buttonDone.Name = "buttonDone";
+            buttonDone.Size = new Size(299, 63);
+            buttonDone.TabIndex = 3;
+            buttonDone.Text = "ВЫПОЛНИТЬ!";
+            buttonDone.UseVisualStyleBackColor = true;
+            buttonDone.Click += buttonDone_Click;
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1040, 451);
-            Controls.Add(button1);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            ClientSize = new Size(850, 450);
+            Controls.Add(buttonDone);
+            Controls.Add(buttonInfo);
+            Controls.Add(groupBoxInOutPut);
+            Controls.Add(groupBoxMain);
             Name = "FormMain";
             Text = "Form1";
             Load += FormMain_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            groupBoxMain.ResumeLayout(false);
+            groupBoxMain.PerformLayout();
+            groupBoxInOutPut.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIO).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private Label label1;
-        private TextBox textBoxResult;
-        private DataGridView dataGridView1;
-        private Button button1;
-        private Label label2;
+        private GroupBox groupBoxMain;
+        private TextBox textBoxInfo;
+        private GroupBox groupBoxInOutPut;
+        private DataGridView dataGridViewIO;
+        private Button buttonInfo;
+        private Button buttonDone;
+        private TextBox textBoxMatrix;
     }
 }

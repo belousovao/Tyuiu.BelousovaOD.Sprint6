@@ -5,30 +5,21 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task3.V27.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            int rows = matrix.GetUpperBound(0) + 1;
-            int columns = matrix.Length / rows;
+            int[] row = new int[matrix.GetLength(0)];
 
-            // Создаем новую матрицу для хранения результата
-            int[,] result = new int[rows, columns];
-
-            // Копируем данные из исходной матрицы в новую
-            Array.Copy(matrix, result, matrix.Length);
-
-            // Сортируем только четвертый столбец
-            for (int i = 0; i < rows - 1; i++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int j = i + 1; j < rows; j++)
-                {
-                    if (result[i, 3] > result[j, 3])
-                    {
-                        // Меняем только элементы четвертого столбца
-                        int temp = result[i, 3];
-                        result[i, 3] = result[j, 3];
-                        result[j, 3] = temp;
-                    }
-                }
+                row[i] = matrix[i, 3];
             }
 
+            Array.Sort(row);
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                matrix[i, 3] = row[i];
+            }
+
+            return matrix;
         }
     }
 }
