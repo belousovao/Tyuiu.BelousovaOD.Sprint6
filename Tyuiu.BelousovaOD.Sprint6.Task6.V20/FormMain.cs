@@ -7,28 +7,10 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
         {
             InitializeComponent();
         }
-        DataService ds = new DataService();
-        private void button_Imput_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.ShowDialog();
-            string fileName = openFileDialog1.FileName;
-            openFilePath.Text = fileName;
-            textBox_Imput.Text = File.ReadAllText(fileName);
-            button_Go.Enabled = true;
 
-        }
-
-        private void button_Go_Click(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
         {
-            string str = " ";
-            string path = Convert.ToString(openFilePath.Text);
-            textBox_Res.Text = ds.CollectTextFromFile(path);
-        }
 
-        private void button_Spr_Click(object sender, EventArgs e)
-        {
-            About formAbout = new About();
-            formAbout.ShowDialog();
         }
     }
 }
