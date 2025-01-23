@@ -1,5 +1,7 @@
-﻿using System.Windows.Forms;
+﻿using System.Reflection.Emit;
+using System.Windows.Forms;
 using Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
 {
     partial class FormMain
