@@ -19,7 +19,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
                 InitializeComponent();
             }
 
-            private void buttonOK_CMV_Click(object sender, EventArgs e)
+            private void buttonOK_BOD_Click(object sender, EventArgs e)
             {
                 this.Close();
             }

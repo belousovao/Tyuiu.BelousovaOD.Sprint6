@@ -24,64 +24,64 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            textBoxHelp_CMV = new TextBox();
-            buttonOK_CMV = new Button();
-            pictureBoxAuthor_CMV = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAuthor_CMV).BeginInit();
+            textBoxHelp_BOD = new TextBox();
+            buttonOK_BOD = new Button();
+            pictureBoxAuthor_BOD = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAuthor_BOD).BeginInit();
             SuspendLayout();
             // 
-            // textBoxHelp_CMV
+            // textBoxHelp_BOD
             // 
-            textBoxHelp_CMV.Location = new Point(129, 12);
-            textBoxHelp_CMV.Multiline = true;
-            textBoxHelp_CMV.Name = "textBoxHelp_CMV";
-            textBoxHelp_CMV.ReadOnly = true;
-            textBoxHelp_CMV.Size = new Size(313, 151);
-            textBoxHelp_CMV.TabIndex = 0;
-            textBoxHelp_CMV.TabStop = false;
-            textBoxHelp_CMV.Text = resources.GetString("textBoxHelp_CMV.Text");
+            textBoxHelp_BOD.Location = new Point(129, 12);
+            textBoxHelp_BOD.Multiline = true;
+            textBoxHelp_BOD.Name = "textBoxHelp_BOD";
+            textBoxHelp_BOD.ReadOnly = true;
+            textBoxHelp_BOD.Size = new Size(313, 151);
+            textBoxHelp_BOD.TabIndex = 0;
+            textBoxHelp_BOD.TabStop = false;
+            textBoxHelp_BOD.Text = resources.GetString("textBoxHelp_BOD.Text");
             // 
-            // buttonOK_CMV
+            // buttonOK_BOD
             // 
-            buttonOK_CMV.Cursor = Cursors.Hand;
-            buttonOK_CMV.Location = new Point(354, 180);
-            buttonOK_CMV.Name = "buttonOK_CMV";
-            buttonOK_CMV.Size = new Size(75, 23);
-            buttonOK_CMV.TabIndex = 1;
-            buttonOK_CMV.Text = "Ок";
-            buttonOK_CMV.UseVisualStyleBackColor = true;
-            buttonOK_CMV.Click += buttonOK_CMV_Click;
+            buttonOK_BOD.Cursor = Cursors.Hand;
+            buttonOK_BOD.Location = new Point(354, 180);
+            buttonOK_BOD.Name = "buttonOK_BOD";
+            buttonOK_BOD.Size = new Size(75, 23);
+            buttonOK_BOD.TabIndex = 1;
+            buttonOK_BOD.Text = "Ок";
+            buttonOK_BOD.UseVisualStyleBackColor = true;
+            buttonOK_BOD.Click += buttonOK_BOD_Click;
             // 
-            // pictureBoxAuthor_CMV
+            // pictureBoxAuthor_BOD
             // 
-            pictureBoxAuthor_CMV.Image = (Image)resources.GetObject("pictureBoxAuthor_CMV.Image");
-            pictureBoxAuthor_CMV.Location = new Point(12, 12);
-            pictureBoxAuthor_CMV.Name = "pictureBoxAuthor_CMV";
-            pictureBoxAuthor_CMV.Size = new Size(111, 151);
-            pictureBoxAuthor_CMV.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxAuthor_CMV.TabIndex = 2;
-            pictureBoxAuthor_CMV.TabStop = false;
+            pictureBoxAuthor_BOD.Image = (Image)resources.GetObject("pictureBoxAuthor_BOD.Image");
+            pictureBoxAuthor_BOD.Location = new Point(12, 12);
+            pictureBoxAuthor_BOD.Name = "pictureBoxAuthor_BOD";
+            pictureBoxAuthor_BOD.Size = new Size(111, 151);
+            pictureBoxAuthor_BOD.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxAuthor_BOD.TabIndex = 2;
+            pictureBoxAuthor_BOD.TabStop = false;
             // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(441, 215);
-            Controls.Add(pictureBoxAuthor_CMV);
-            Controls.Add(buttonOK_CMV);
-            Controls.Add(textBoxHelp_CMV);
+            Controls.Add(pictureBoxAuthor_BOD);
+            Controls.Add(buttonOK_BOD);
+            Controls.Add(textBoxHelp_BOD);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormAbout";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAuthor_CMV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAuthor_BOD).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-        private TextBox textBoxHelp_CMV;
-        private Button buttonOK_CMV;
-        private PictureBox pictureBoxAuthor_CMV;
+        private TextBox textBoxHelp_BOD;
+        private Button buttonOK_BOD;
+        private PictureBox pictureBoxAuthor_BOD;
     }
 }

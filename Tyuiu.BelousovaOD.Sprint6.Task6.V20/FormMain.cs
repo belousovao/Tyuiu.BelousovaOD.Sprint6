@@ -14,10 +14,10 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             openFilePath = openFileDialogTask.FileName;
             foreach (string line in File.ReadLines(openFilePath))
             {
-                textBoxInput_CMV.AppendText(line + Environment.NewLine);
+                textBoxInput_BOD.AppendText(line + Environment.NewLine);
             }
-            groupBoxInput_CMV.Text = groupBoxInput_CMV.Text + " " + openFileDialogTask.FileName;
-            buttonDone_CMV.Enabled = true;
+            groupBoxInput_BOD.Text = groupBoxInput_BOD.Text + " " + openFileDialogTask.FileName;
+            buttonDone_BOD.Enabled = true;
         }
 
         string openFilePath;
