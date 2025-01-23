@@ -21,7 +21,12 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             base.Dispose(disposing);
         }
 
-        private void InitializeComponent()
+        private Button GetButtonOK_BOD()
+        {
+            return buttonOK_BOD;
+        }
+
+        private void InitializeComponent(Button buttonOK_BOD)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             textBoxHelp_BOD = new TextBox();
@@ -50,7 +55,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             buttonOK_BOD.TabIndex = 1;
             buttonOK_BOD.Text = "Ок";
             buttonOK_BOD.UseVisualStyleBackColor = true;
-            buttonOK_BOD.Click += buttonOK_BOD_Click;
+            buttonOK_BOD.Click += ButtonOK_BOD_Click;
             // 
             // pictureBoxAuthor_BOD
             // 

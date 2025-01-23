@@ -16,10 +16,10 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
     {
             public FormAbout()
             {
-                InitializeComponent();
+                InitializeComponent(GetButtonOK_BOD());
             }
 
-            private void buttonOK_BOD_Click(object sender, EventArgs e)
+            private void ButtonOK_BOD_Click(object sender, EventArgs e)
             {
                 this.Close();
             }
