@@ -22,10 +22,5 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib
             }
             return resStr.Trim();
         }
-
-        public string CollectTextFromFile(string path)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
