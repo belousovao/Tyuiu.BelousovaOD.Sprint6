@@ -53,7 +53,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BelousovaOD.Sprint6.T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task6", "Task6", "{A4792D0C-15AF-4764-862E-29DFAF097969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib", "Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib\Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib.csproj", "{66832E1C-C8C7-464D-88C9-005B3D76F6B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BelousovaOD.Sprint6.Task6.V19.Lib", "Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib\Tyuiu.BelousovaOD.Sprint6.Task6.V19.Lib.csproj", "{66832E1C-C8C7-464D-88C9-005B3D76F6B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BelousovaOD.Sprint6.Task6.V20.Test", "Tyuiu.BelousovaOD.Sprint6.Task6.V20.Test\Tyuiu.BelousovaOD.Sprint6.Task6.V20.Test.csproj", "{7F5987DE-D4ED-4C3E-A906-2E222832301D}"
 EndProject
