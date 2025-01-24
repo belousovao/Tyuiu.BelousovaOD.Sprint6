@@ -1,5 +1,5 @@
-﻿using Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib;
-namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
+﻿using Tyuiu.BelousovaOD.Sprint6.Task6.V19.lib;
+namespace Tyuiu.BelousovaOD.Sprint6.Task6.V19
 {
     partial class FormAbout
     {
@@ -38,7 +38,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(441, 216);
             textBox1.TabIndex = 1;
-            textBox1.Text = "Разработчик: Демченко А. Д.\r\nГруппа ИСПб-24-1\r\n\r\nПрограмма разработана в рамках изучения языка C#\r\n\r\nТюменский индустриальный университет (с) 2024\r\nВысшая школа цифровых технологий (с) 2024";
+            textBox1.Text = "Разработчик: Белоусова О. Д.\r\nГруппа СМАРТб-24-1\r\n\r\nПрограмма разработана в рамках изучения языка C#\r\n\r\nТюменский индустриальный университет (с) 2024\r\nВысшая школа цифровых технологий (с) 2024";
             // 
             // pictureBox1
             // 
@@ -84,10 +84,6 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             PerformLayout();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;

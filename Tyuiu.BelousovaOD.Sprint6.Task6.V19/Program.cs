@@ -1,5 +1,5 @@
-using Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib;
-namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
+using Tyuiu.BelousovaOD.Sprint6.Task6.V19.lib;
+namespace Tyuiu.BelousovaOD.Sprint6.Task6.V19
 {
     internal static class Program
     {

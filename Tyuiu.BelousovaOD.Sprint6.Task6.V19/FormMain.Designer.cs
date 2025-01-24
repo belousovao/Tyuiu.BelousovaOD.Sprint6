@@ -1,5 +1,5 @@
-﻿using Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib;
-namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
+﻿using Tyuiu.BelousovaOD.Sprint6.Task6.V19.lib;
+namespace Tyuiu.BelousovaOD.Sprint6.Task6.V19
 {
     partial class FormMain
     {
@@ -19,6 +19,26 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            SuspendLayout();
+            // 
+            // FormMain
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Name = "FormMain";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         private void InitializeComponent()
@@ -167,7 +187,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             Margin = new Padding(5, 6, 5, 6);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 6 | Вариант 19 | Белоусова Ольга | Смартб - 24 - 1";
+            Text = "Спринт 6 | Таск 6 | Вариант 19 | Демченко Александра | ИСПб - 24 - 1";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBoxInput.ResumeLayout(false);
@@ -177,8 +197,7 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             ResumeLayout(false);
         }
 
-
-
+      
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBoxInput;
@@ -188,6 +207,6 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonExecute;
         private System.Windows.Forms.Button buttonHelp;
-        private System.Windows.Forms.OpenFileDialog openFileDialogTask;
+        private System.Windows.Forms.OpenFileDialog openFileDialogTask;#endregion
     }
 }

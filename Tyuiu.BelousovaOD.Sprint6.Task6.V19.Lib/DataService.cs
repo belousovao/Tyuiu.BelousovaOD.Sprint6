@@ -1,5 +1,5 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint6;
-namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib
+namespace Tyuiu.BelousovaOD.Sprint6.Task6.V19.lib
 {
     public class DataService : ISprint6Task6V19
     {
@@ -11,11 +11,6 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib
             string result = string.Join(" ", words.Where(word => word.Contains('l')));
 
             return result;
-        }
-
-        public string CollectTextFromFile(string filePath)
-        {
-            throw new NotImplementedException();
         }
     }
 }
