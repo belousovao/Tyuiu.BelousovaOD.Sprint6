@@ -1,25 +1,21 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20.Lib
 {
-    public class DataService : ISprint6Task6V20
+    public class DataService : ISprint6Task6V19
     {
         public string CollectTextFromFile(string str, string path)
         {
-            var resStr = "";
+            string fileContent = File.ReadAllText(path);
+            string[] words = fileContent.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
-            using (StreamReader sr = new StreamReader(path))
-            {
-                string line;
-                while ((line = sr.ReadLine()) != null)
-                {
-                    string[] strings = line.Trim().Split(' ');
-                    if (strings.Length > 1)
-                    {
-                        resStr += strings[1] + " ";
-                    }
-                }
-            }
-            return resStr.Trim();
+            string result = string.Join(" ", words.Where(word => word.Contains('l')));
+
+            return result;
+        }
+
+        public string CollectTextFromFile(string filePath)
+        {
+            throw new NotImplementedException();
         }
     }
 }

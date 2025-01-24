@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,14 +13,14 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
 {
     public partial class FormAbout : Form
     {
-            public FormAbout()
-            {
-                InitializeComponent(GetButtonOK_BOD());
-            }
+        public FormAbout()
+        {
+            InitializeComponent();
+        }
 
-            private void ButtonOK_BOD_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
+        private void FormAbout_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

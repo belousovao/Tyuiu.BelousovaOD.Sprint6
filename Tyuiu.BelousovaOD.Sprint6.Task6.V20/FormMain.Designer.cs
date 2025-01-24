@@ -23,242 +23,171 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
 
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            panelTop_BOD = new Panel();
-            buttonDone_BOD = new Button();
-            buttonOpenFile_BOD = new Button();
-            buttonHelp_BOD = new Button();
-            groupBoxTask_BOD = new GroupBox();
-            textBoxTask_BOD = new TextBox();
-            groupBoxInput_BOD = new GroupBox();
-            textBoxInput_BOD = new TextBox();
-            groupBoxOutput_BOD = new GroupBox();
-            textBoxOutput_BOD = new TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            groupBox1 = new GroupBox();
+            textBox2 = new TextBox();
+            groupBoxInput = new GroupBox();
+            textBoxInput = new TextBox();
+            groupBox3 = new GroupBox();
+            textBoxOutput = new TextBox();
             openFileDialogTask = new OpenFileDialog();
-            toolTipTask = new ToolTip(components);
-            panelPredTop_BOD = new Panel();
-            splitContainer_BOD = new SplitContainer();
-            panelTop_BOD.SuspendLayout();
-            groupBoxTask_BOD.SuspendLayout();
-            groupBoxInput_BOD.SuspendLayout();
-            groupBoxOutput_BOD.SuspendLayout();
-            panelPredTop_BOD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainer_BOD).BeginInit();
-            splitContainer_BOD.Panel1.SuspendLayout();
-            splitContainer_BOD.Panel2.SuspendLayout();
-            splitContainer_BOD.SuspendLayout();
+            buttonHelp = new Button();
+            buttonExecute = new Button();
+            button1 = new Button();
+            groupBox1.SuspendLayout();
+            groupBoxInput.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
-            // panelTop_BOD
+            // groupBox1
             // 
-            panelTop_BOD.BackColor = Color.White;
-            panelTop_BOD.Controls.Add(buttonDone_BOD);
-            panelTop_BOD.Controls.Add(buttonOpenFile_BOD);
-            panelTop_BOD.Controls.Add(buttonHelp_BOD);
-            panelTop_BOD.Dock = DockStyle.Top;
-            panelTop_BOD.Location = new Point(0, 0);
-            panelTop_BOD.Margin = new Padding(3, 4, 3, 4);
-            panelTop_BOD.Name = "panelTop_BOD";
-            panelTop_BOD.Size = new Size(925, 117);
-            panelTop_BOD.TabIndex = 3;
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Location = new Point(20, 158);
+            groupBox1.Margin = new Padding(5, 6, 5, 6);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(5, 6, 5, 6);
+            groupBox1.Size = new Size(1564, 137);
+            groupBox1.TabIndex = 22;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Условие";
             // 
-            // buttonDone_BOD
+            // textBox2
             // 
-            buttonDone_BOD.BackColor = Color.White;
-            buttonDone_BOD.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonDone_BOD.Cursor = Cursors.Hand;
-            buttonDone_BOD.Enabled = false;
-            buttonDone_BOD.Location = new Point(102, 16);
-            buttonDone_BOD.Margin = new Padding(3, 4, 3, 4);
-            buttonDone_BOD.Name = "buttonDone_BOD";
-            buttonDone_BOD.Size = new Size(75, 87);
-            buttonDone_BOD.TabIndex = 4;
-            toolTipTask.SetToolTip(buttonDone_BOD, "Произвести обработку файла");
-            buttonDone_BOD.UseVisualStyleBackColor = false;
+            textBox2.Dock = DockStyle.Fill;
+            textBox2.Location = new Point(5, 30);
+            textBox2.Margin = new Padding(5, 6, 5, 6);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(1554, 101);
+            textBox2.TabIndex = 0;
+            textBox2.Text = resources.GetString("textBox2.Text");
             // 
-            // buttonOpenFile_BOD
+            // groupBoxInput
             // 
-            buttonOpenFile_BOD.BackColor = Color.White;
-            buttonOpenFile_BOD.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonOpenFile_BOD.Cursor = Cursors.Hand;
-            buttonOpenFile_BOD.Location = new Point(19, 16);
-            buttonOpenFile_BOD.Margin = new Padding(3, 4, 3, 4);
-            buttonOpenFile_BOD.Name = "buttonOpenFile_BOD";
-            buttonOpenFile_BOD.Size = new Size(75, 87);
-            buttonOpenFile_BOD.TabIndex = 5;
-            buttonOpenFile_BOD.Text = "\r\n";
-            toolTipTask.SetToolTip(buttonOpenFile_BOD, "Открыть файл\r\nВыберите нужный файл для обработки.\r\n");
-            buttonOpenFile_BOD.UseVisualStyleBackColor = false;
+            groupBoxInput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBoxInput.Controls.Add(textBoxInput);
+            groupBoxInput.Location = new Point(20, 306);
+            groupBoxInput.Margin = new Padding(5, 6, 5, 6);
+            groupBoxInput.Name = "groupBoxInput";
+            groupBoxInput.Padding = new Padding(5, 6, 5, 6);
+            groupBoxInput.Size = new Size(753, 721);
+            groupBoxInput.TabIndex = 23;
+            groupBoxInput.TabStop = false;
+            groupBoxInput.Text = "Ввод:";
             // 
-            // buttonHelp_BOD
+            // textBoxInput
             // 
-            buttonHelp_BOD.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonHelp_BOD.BackColor = Color.White;
-            buttonHelp_BOD.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonHelp_BOD.Cursor = Cursors.Hand;
-            buttonHelp_BOD.Location = new Point(833, 16);
-            buttonHelp_BOD.Margin = new Padding(3, 4, 3, 4);
-            buttonHelp_BOD.Name = "buttonHelp_BOD";
-            buttonHelp_BOD.Size = new Size(78, 87);
-            buttonHelp_BOD.TabIndex = 6;
-            buttonHelp_BOD.UseVisualStyleBackColor = false;
+            textBoxInput.BackColor = SystemColors.AppWorkspace;
+            textBoxInput.Dock = DockStyle.Fill;
+            textBoxInput.Location = new Point(5, 30);
+            textBoxInput.Margin = new Padding(5, 6, 5, 6);
+            textBoxInput.Multiline = true;
+            textBoxInput.Name = "textBoxInput";
+            textBoxInput.ReadOnly = true;
+            textBoxInput.Size = new Size(743, 685);
+            textBoxInput.TabIndex = 1;
             // 
-            // groupBoxTask_BOD
+            // groupBox3
             // 
-            groupBoxTask_BOD.Controls.Add(textBoxTask_BOD);
-            groupBoxTask_BOD.Dock = DockStyle.Fill;
-            groupBoxTask_BOD.Location = new Point(0, 0);
-            groupBoxTask_BOD.Margin = new Padding(3, 4, 3, 4);
-            groupBoxTask_BOD.Name = "groupBoxTask_BOD";
-            groupBoxTask_BOD.Padding = new Padding(3, 4, 3, 4);
-            groupBoxTask_BOD.Size = new Size(925, 133);
-            groupBoxTask_BOD.TabIndex = 3;
-            groupBoxTask_BOD.TabStop = false;
-            groupBoxTask_BOD.Text = "Условие:";
+            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox3.Controls.Add(textBoxOutput);
+            groupBox3.Location = new Point(795, 306);
+            groupBox3.Margin = new Padding(5, 6, 5, 6);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(5, 6, 5, 6);
+            groupBox3.Size = new Size(789, 721);
+            groupBox3.TabIndex = 23;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "ВВыввод:";
             // 
-            // textBoxTask_BOD
+            // textBoxOutput
             // 
-            textBoxTask_BOD.Dock = DockStyle.Fill;
-            textBoxTask_BOD.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTask_BOD.Location = new Point(3, 24);
-            textBoxTask_BOD.Margin = new Padding(3, 4, 3, 4);
-            textBoxTask_BOD.Multiline = true;
-            textBoxTask_BOD.Name = "textBoxTask_BOD";
-            textBoxTask_BOD.ReadOnly = true;
-            textBoxTask_BOD.Size = new Size(919, 105);
-            textBoxTask_BOD.TabIndex = 0;
-            textBoxTask_BOD.TabStop = false;
-            // 
-            // groupBoxInput_BOD
-            // 
-            groupBoxInput_BOD.Controls.Add(textBoxInput_BOD);
-            groupBoxInput_BOD.Dock = DockStyle.Fill;
-            groupBoxInput_BOD.Location = new Point(0, 0);
-            groupBoxInput_BOD.Margin = new Padding(3, 4, 3, 4);
-            groupBoxInput_BOD.Name = "groupBoxInput_BOD";
-            groupBoxInput_BOD.Padding = new Padding(3, 4, 3, 4);
-            groupBoxInput_BOD.Size = new Size(307, 495);
-            groupBoxInput_BOD.TabIndex = 0;
-            groupBoxInput_BOD.TabStop = false;
-            groupBoxInput_BOD.Text = "Ввод:";
-            // 
-            // textBoxInput_BOD
-            // 
-            textBoxInput_BOD.Dock = DockStyle.Fill;
-            textBoxInput_BOD.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxInput_BOD.Location = new Point(3, 24);
-            textBoxInput_BOD.Margin = new Padding(3, 4, 3, 4);
-            textBoxInput_BOD.Multiline = true;
-            textBoxInput_BOD.Name = "textBoxInput_BOD";
-            textBoxInput_BOD.ReadOnly = true;
-            textBoxInput_BOD.Size = new Size(301, 467);
-            textBoxInput_BOD.TabIndex = 0;
-            // 
-            // groupBoxOutput_BOD
-            // 
-            groupBoxOutput_BOD.Controls.Add(textBoxOutput_BOD);
-            groupBoxOutput_BOD.Dock = DockStyle.Fill;
-            groupBoxOutput_BOD.Location = new Point(0, 0);
-            groupBoxOutput_BOD.Margin = new Padding(3, 4, 3, 4);
-            groupBoxOutput_BOD.Name = "groupBoxOutput_BOD";
-            groupBoxOutput_BOD.Padding = new Padding(3, 4, 3, 4);
-            groupBoxOutput_BOD.Size = new Size(613, 495);
-            groupBoxOutput_BOD.TabIndex = 0;
-            groupBoxOutput_BOD.TabStop = false;
-            groupBoxOutput_BOD.Text = "Вывод:";
-            // 
-            // textBoxOutput_BOD
-            // 
-            textBoxOutput_BOD.Dock = DockStyle.Fill;
-            textBoxOutput_BOD.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxOutput_BOD.Location = new Point(3, 24);
-            textBoxOutput_BOD.Margin = new Padding(3, 4, 3, 4);
-            textBoxOutput_BOD.Multiline = true;
-            textBoxOutput_BOD.Name = "textBoxOutput_BOD";
-            textBoxOutput_BOD.ReadOnly = true;
-            textBoxOutput_BOD.Size = new Size(607, 467);
-            textBoxOutput_BOD.TabIndex = 0;
+            textBoxOutput.BackColor = SystemColors.AppWorkspace;
+            textBoxOutput.Dock = DockStyle.Fill;
+            textBoxOutput.Location = new Point(5, 30);
+            textBoxOutput.Margin = new Padding(5, 6, 5, 6);
+            textBoxOutput.Multiline = true;
+            textBoxOutput.Name = "textBoxOutput";
+            textBoxOutput.ReadOnly = true;
+            textBoxOutput.Size = new Size(779, 685);
+            textBoxOutput.TabIndex = 2;
             // 
             // openFileDialogTask
             // 
             openFileDialogTask.FileName = "openFileDialogTask";
             // 
-            // toolTipTask
+            // buttonHelp
             // 
-            toolTipTask.ToolTipIcon = ToolTipIcon.Info;
-            toolTipTask.ToolTipTitle = "Подсказка";
+            buttonHelp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonHelp.Location = new Point(1468, 23);
+            buttonHelp.Margin = new Padding(5, 6, 5, 6);
+            buttonHelp.Name = "buttonHelp";
+            buttonHelp.Size = new Size(117, 115);
+            buttonHelp.TabIndex = 26;
+            buttonHelp.Text = "Инфо";
+            buttonHelp.UseVisualStyleBackColor = true;
+            buttonHelp.Click += buttonHelp_Click;
             // 
-            // panelPredTop_BOD
+            // buttonExecute
             // 
-            panelPredTop_BOD.Controls.Add(groupBoxTask_BOD);
-            panelPredTop_BOD.Dock = DockStyle.Top;
-            panelPredTop_BOD.Location = new Point(0, 117);
-            panelPredTop_BOD.Margin = new Padding(3, 4, 3, 4);
-            panelPredTop_BOD.Name = "panelPredTop_BOD";
-            panelPredTop_BOD.Size = new Size(925, 133);
-            panelPredTop_BOD.TabIndex = 4;
+            buttonExecute.Enabled = false;
+            buttonExecute.Location = new Point(147, 23);
+            buttonExecute.Margin = new Padding(5, 6, 5, 6);
+            buttonExecute.Name = "buttonExecute";
+            buttonExecute.Size = new Size(154, 115);
+            buttonExecute.TabIndex = 25;
+            buttonExecute.Text = "Преобразовать";
+            buttonExecute.UseVisualStyleBackColor = true;
+            buttonExecute.Click += buttonExecute_Click;
             // 
-            // splitContainer_BOD
+            // button1
             // 
-            splitContainer_BOD.Dock = DockStyle.Fill;
-            splitContainer_BOD.Location = new Point(0, 250);
-            splitContainer_BOD.Margin = new Padding(3, 4, 3, 4);
-            splitContainer_BOD.Name = "splitContainer_BOD";
-            // 
-            // splitContainer_BOD.Panel1
-            // 
-            splitContainer_BOD.Panel1.Controls.Add(groupBoxInput_BOD);
-            // 
-            // splitContainer_BOD.Panel2
-            // 
-            splitContainer_BOD.Panel2.Controls.Add(groupBoxOutput_BOD);
-            splitContainer_BOD.Size = new Size(925, 495);
-            splitContainer_BOD.SplitterDistance = 307;
-            splitContainer_BOD.SplitterWidth = 5;
-            splitContainer_BOD.TabIndex = 5;
+            button1.Location = new Point(20, 23);
+            button1.Margin = new Padding(5, 6, 5, 6);
+            button1.Name = "button1";
+            button1.Size = new Size(117, 115);
+            button1.TabIndex = 24;
+            button1.Text = "Открыть";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(925, 745);
-            Controls.Add(splitContainer_BOD);
-            Controls.Add(panelPredTop_BOD);
-            Controls.Add(panelTop_BOD);
-            Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(940, 782);
+            ClientSize = new Size(1604, 1050);
+            Controls.Add(buttonHelp);
+            Controls.Add(buttonExecute);
+            Controls.Add(button1);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBoxInput);
+            Controls.Add(groupBox1);
+            Margin = new Padding(5, 6, 5, 6);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 6 | Вариант 20 | Белоусова Ольга";
-            Load += FormMain_Load;
-            panelTop_BOD.ResumeLayout(false);
-            groupBoxTask_BOD.ResumeLayout(false);
-            groupBoxTask_BOD.PerformLayout();
-            groupBoxInput_BOD.ResumeLayout(false);
-            groupBoxInput_BOD.PerformLayout();
-            groupBoxOutput_BOD.ResumeLayout(false);
-            groupBoxOutput_BOD.PerformLayout();
-            panelPredTop_BOD.ResumeLayout(false);
-            splitContainer_BOD.Panel1.ResumeLayout(false);
-            splitContainer_BOD.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer_BOD).EndInit();
-            splitContainer_BOD.ResumeLayout(false);
+            Text = "Спринт 6 | Таск 6 | Вариант 19 | Белоусова Ольга | Смартб - 24 - 1";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBoxInput.ResumeLayout(false);
+            groupBoxInput.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
         }
 
-        private Panel panelTop_BOD;
-        private Button buttonDone_BOD;
-        private Button buttonOpenFile_BOD;
-        private Button buttonHelp_BOD;
-        private GroupBox groupBoxTask_BOD;
-        private TextBox textBoxTask_BOD;
-        private GroupBox groupBoxOutput_BOD;
-        private GroupBox groupBoxInput_BOD;
-        private ToolTip toolTipTask;
-        private OpenFileDialog openFileDialogTask;
-        private TextBox textBoxInput_BOD;
-        private TextBox textBoxOutput_BOD;
-        private Panel panelPredTop_BOD;
-        private SplitContainer splitContainer_BOD;
+
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.GroupBox groupBoxInput;
+        private System.Windows.Forms.TextBox textBoxInput;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBoxOutput;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonExecute;
+        private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.OpenFileDialog openFileDialogTask;
     }
 }

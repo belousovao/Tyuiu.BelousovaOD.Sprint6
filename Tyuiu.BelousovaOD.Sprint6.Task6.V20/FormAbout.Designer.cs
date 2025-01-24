@@ -21,72 +21,76 @@ namespace Tyuiu.BelousovaOD.Sprint6.Task6.V20
             base.Dispose(disposing);
         }
 
-        private Button GetButtonOK_BOD()
+        private void InitializeComponent()
         {
-            return buttonOK_BOD;
-        }
-
-        private void InitializeComponent(Button buttonOK_BOD)
-        {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            textBoxHelp_BOD = new TextBox();
-            buttonOK_BOD = new Button();
-            pictureBoxAuthor_BOD = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAuthor_BOD).BeginInit();
+            textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBoxHelp_BOD
+            // textBox1
             // 
-            textBoxHelp_BOD.Location = new Point(129, 12);
-            textBoxHelp_BOD.Multiline = true;
-            textBoxHelp_BOD.Name = "textBoxHelp_BOD";
-            textBoxHelp_BOD.ReadOnly = true;
-            textBoxHelp_BOD.Size = new Size(313, 151);
-            textBoxHelp_BOD.TabIndex = 0;
-            textBoxHelp_BOD.TabStop = false;
-            textBoxHelp_BOD.Text = resources.GetString("textBoxHelp_BOD.Text");
+            textBox1.Location = new Point(310, 23);
+            textBox1.Margin = new Padding(5, 6, 5, 6);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(441, 216);
+            textBox1.TabIndex = 1;
+            textBox1.Text = "Разработчик: Демченко А. Д.\r\nГруппа ИСПб-24-1\r\n\r\nПрограмма разработана в рамках изучения языка C#\r\n\r\nТюменский индустриальный университет (с) 2024\r\nВысшая школа цифровых технологий (с) 2024";
             // 
-            // buttonOK_BOD
+            // pictureBox1
             // 
-            buttonOK_BOD.Cursor = Cursors.Hand;
-            buttonOK_BOD.Location = new Point(354, 180);
-            buttonOK_BOD.Name = "buttonOK_BOD";
-            buttonOK_BOD.Size = new Size(75, 23);
-            buttonOK_BOD.TabIndex = 1;
-            buttonOK_BOD.Text = "Ок";
-            buttonOK_BOD.UseVisualStyleBackColor = true;
-            buttonOK_BOD.Click += ButtonOK_BOD_Click;
+            pictureBox1.Image = Properties.Resources.photo_2025_01_05_17_50_53;
+            pictureBox1.Location = new Point(20, 6);
+            pictureBox1.Margin = new Padding(5, 6, 5, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(280, 379);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
-            // pictureBoxAuthor_BOD
+            // button1
             // 
-            pictureBoxAuthor_BOD.Image = (Image)resources.GetObject("pictureBoxAuthor_BOD.Image");
-            pictureBoxAuthor_BOD.Location = new Point(12, 12);
-            pictureBoxAuthor_BOD.Name = "pictureBoxAuthor_BOD";
-            pictureBoxAuthor_BOD.Size = new Size(111, 151);
-            pictureBoxAuthor_BOD.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxAuthor_BOD.TabIndex = 2;
-            pictureBoxAuthor_BOD.TabStop = false;
+            button1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.Location = new Point(431, 251);
+            button1.Margin = new Padding(5, 6, 5, 6);
+            button1.Name = "button1";
+            button1.Size = new Size(207, 122);
+            button1.TabIndex = 2;
+            button1.Text = "Ок";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // FormAbout
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(441, 215);
-            Controls.Add(pictureBoxAuthor_BOD);
-            Controls.Add(buttonOK_BOD);
-            Controls.Add(textBoxHelp_BOD);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            ClientSize = new Size(782, 388);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(pictureBox1);
+            Margin = new Padding(5, 6, 5, 6);
             MaximizeBox = false;
+            MaximumSize = new Size(804, 444);
             MinimizeBox = false;
+            MinimumSize = new Size(804, 444);
             Name = "FormAbout";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAuthor_BOD).EndInit();
+            Text = "Это я";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-        private TextBox textBoxHelp_BOD;
-        private Button buttonOK_BOD;
-        private PictureBox pictureBoxAuthor_BOD;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
